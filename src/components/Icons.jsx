@@ -1,4 +1,4 @@
-﻿export function Icon({ name, size = 18, className = '' }) {
+export function Icon({ name, size = 18, className = '' }) {
   const common = {
     width: size,
     height: size,
@@ -50,7 +50,7 @@
     exit: (
       <>
         <circle cx="12" cy="12" r="9" />
-        <path d="M12 8l-4 4 4 4" />
+        <path d="M12 8l4 4-4 4" />
         <path d="M8 12h8" />
       </>
     ),

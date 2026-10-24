@@ -239,7 +239,7 @@ ul {
   background: transparent;
   color: #3c4d5c;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -283,7 +283,7 @@ ul {
   background: transparent;
   color: #3c4d5c;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -303,7 +303,7 @@ ul {
   background: transparent;
   color: #3c4d5c;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   margin-left: 6px;
 }
@@ -1339,16 +1339,19 @@ select.text-input {
   align-items: center;
   gap: 8px;
   padding: 11px 12px;
-  border: 1px solid #d0dae4;
-  border-radius: 5px;
+  border: 1px solid #c8d8e8;
+  border-radius: 10px;
   background: #fff;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(180, 200, 220, 0.18);
 }
 
 .option-card:hover {
-  border-color: #9eb1c1;
-  background: #fcfdfe;
+  border-color: #a0b8d0;
+  background: #f8fbff;
+  box-shadow: 0 2px 8px rgba(150, 180, 210, 0.22);
+  transform: translateY(-1px);
 }
 
 .option-card.is-selected {
@@ -2802,7 +2805,7 @@ select.text-input {
   }
 
   .site-header__action-btn {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 13px;
     border: 0;
     box-shadow: none;
@@ -2868,15 +2871,17 @@ select.text-input {
   .option-card {
     min-height: 56px;
     padding: 14px 13px;
-    border: 1px solid #d2dfeb;
-    border-radius: 6px;
-    box-shadow: none;
+    border: 1px solid #c8d8e8;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(180, 200, 220, 0.18);
     background: #fff;
   }
 
   .option-card:hover {
-    border-color: #b5c9dc;
-    background: #fcfdff;
+    border-color: #a0b8d0;
+    background: #f8fbff;
+    box-shadow: 0 2px 8px rgba(150, 180, 210, 0.22);
+    transform: translateY(-1px);
   }
 
   .option-card.is-selected {
