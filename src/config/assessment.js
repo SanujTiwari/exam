@@ -36,7 +36,7 @@ export const assessmentConfig = {
       id: 'english',
       name: 'English Ability',
       shortName: 'English',
-      durationMinutes: 12,
+      durationMinutes: 15,
       instructions:
         'Choose the most appropriate answer for each question. Read each sentence or passage carefully before selecting an option.',
       questions: [
@@ -279,7 +279,7 @@ export const assessmentConfig = {
       id: 'logical',
       name: 'Logical Ability',
       shortName: 'Logical',
-      durationMinutes: 12,
+      durationMinutes: 15,
       instructions:
         'Identify patterns and relationships, then choose the option that follows logically from the information given.',
       questions: [
@@ -354,13 +354,55 @@ export const assessmentConfig = {
           options: ['83', '91', '95', '99'],
           correctIndex: 2,
         },
+        {
+          id: 'la-9', type: 'multiple-choice',
+          prompt: 'If MOUSE is coded as PRXVH, how is CHAIR coded?',
+          options: ['FKDLU', 'FKDLY', 'EKDLU', 'FLDLU'],
+          correctIndex: 0,
+        },
+        {
+          id: 'la-10', type: 'multiple-choice',
+          prompt: 'A is taller than B. C is shorter than B. D is taller than A. Who is the shortest?',
+          options: ['A', 'B', 'C', 'D'],
+          correctIndex: 2,
+        },
+        {
+          id: 'la-11', type: 'multiple-choice',
+          prompt: 'Find the missing number: 2, 6, 12, 20, 30, ?',
+          options: ['40', '42', '44', '48'],
+          correctIndex: 1,
+        },
+        {
+          id: 'la-12', type: 'multiple-choice',
+          prompt: 'All roses are flowers. Some flowers are red. Which conclusion is valid?',
+          options: ['All roses are red.', 'Some roses may be red.', 'No flowers are roses.', 'All red things are roses.'],
+          correctIndex: 1,
+        },
+        {
+          id: 'la-13', type: 'multiple-choice',
+          prompt: 'If Monday is Day 1, what day is the 45th day?',
+          options: ['Monday', 'Wednesday', 'Thursday', 'Saturday'],
+          correctIndex: 2,
+        },
+        {
+          id: 'la-14', type: 'multiple-choice',
+          prompt: 'Which word does NOT belong in the group: Apple, Mango, Carrot, Banana?',
+          options: ['Apple', 'Mango', 'Carrot', 'Banana'],
+          correctIndex: 2,
+        },
+        {
+          id: 'la-15', type: 'multiple-choice',
+          prompt: 'Pointing to a photograph, Amit said "She is the daughter of my grandfather\'s only son." How is the girl related to Amit?',
+          options: ['Daughter', 'Sister', 'Mother', 'Cousin'],
+          correctIndex: 1,
+        },
       ],
     },
     {
       id: 'automata',
       name: 'Automata and Programming Logic',
       shortName: 'Automata',
-      durationMinutes: 12,
+      durationMinutes: 15,
       instructions:
         'Apply programming logic, state-machine reasoning, and basic computational thinking to each question.',
       questions: [
@@ -438,13 +480,55 @@ export const assessmentConfig = {
           options: ['0', '1', '2', 'It has no deterministic state'],
           correctIndex: 1,
         },
+        {
+          id: 'au-9', type: 'multiple-choice',
+          prompt: 'What is the output of: x = 5; while x > 0: print(x); x = x - 2',
+          options: ['5 3 1', '5 4 3 2 1', '5 3', '4 2 0'],
+          correctIndex: 0,
+        },
+        {
+          id: 'au-10', type: 'multiple-choice',
+          prompt: 'Which data structure uses FIFO (First In, First Out) ordering?',
+          options: ['Stack', 'Queue', 'Binary Tree', 'Hash Map'],
+          correctIndex: 1,
+        },
+        {
+          id: 'au-11', type: 'multiple-choice',
+          prompt: 'What is the worst-case time complexity of linear search?',
+          options: ['O(1)', 'O(log n)', 'O(n)', 'O(n²)'],
+          correctIndex: 2,
+        },
+        {
+          id: 'au-12', type: 'multiple-choice',
+          prompt: 'A push-down automaton differs from a finite automaton because it has:',
+          options: ['Multiple start states', 'A stack memory', 'No transitions', 'Only one state'],
+          correctIndex: 1,
+        },
+        {
+          id: 'au-13', type: 'multiple-choice',
+          prompt: 'What does the following return? function f(n) { if (n <= 1) return n; return f(n-1) + f(n-2); } f(6)',
+          options: ['5', '8', '11', '13'],
+          correctIndex: 1,
+        },
+        {
+          id: 'au-14', type: 'multiple-choice',
+          prompt: 'Which of the following is a context-free language?',
+          options: ['a^n b^n (n ≥ 0)', 'a^n b^n c^n', 'Strings with equal a, b, c counts', 'None of the above'],
+          correctIndex: 0,
+        },
+        {
+          id: 'au-15', type: 'multiple-choice',
+          prompt: 'What is the output of: for i in range(3): for j in range(2): print(i+j, end=" ")',
+          options: ['0 1 1 2 2 3', '0 1 2 3 4 5', '0 0 1 1 2 2', '1 2 2 3 3 4'],
+          correctIndex: 0,
+        },
       ],
     },
     {
       id: 'cs',
       name: 'Computer Science Fundamentals',
       shortName: 'CS Fundamentals',
-      durationMinutes: 12,
+      durationMinutes: 15,
       instructions:
         'Answer questions covering core computer science concepts, data structures, databases, and networks.',
       questions: [
@@ -525,7 +609,7 @@ export const assessmentConfig = {
       id: 'coding',
       name: 'Coding Practice',
       shortName: 'Coding',
-      durationMinutes: 20,
+      durationMinutes: 15,
       instructions:
         'Read each code-oriented problem, reason about the expected behaviour, and choose the best answer.',
       questions: [
@@ -588,6 +672,60 @@ export const assessmentConfig = {
             'return a === b ? a : a + b;',
             'return b;',
           ],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-7', type: 'multiple-choice',
+          prompt: 'What is the output of: console.log(typeof null)',
+          options: ['"null"', '"undefined"', '"object"', '"boolean"'],
+          correctIndex: 2,
+        },
+        {
+          id: 'co-8', type: 'multiple-choice',
+          prompt: 'Which sorting algorithm has the best average-case time complexity?',
+          options: ['Bubble Sort – O(n²)', 'Merge Sort – O(n log n)', 'Selection Sort – O(n²)', 'Insertion Sort – O(n²)'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-9', type: 'multiple-choice',
+          prompt: 'What does the following code print? let a = [1,2,3]; a.push(4); console.log(a.length)',
+          options: ['3', '4', '5', 'undefined'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-10', type: 'multiple-choice',
+          prompt: 'In Python, what does "list comprehension" refer to?',
+          options: ['A way to delete lists', 'A concise way to create lists', 'A method to sort lists', 'A type of linked list'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-11', type: 'multiple-choice',
+          prompt: 'What is the output of: print(2 ** 3 ** 2) in Python?',
+          options: ['64', '512', '36', '81'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-12', type: 'multiple-choice',
+          prompt: 'Which keyword is used to handle exceptions in Python?',
+          options: ['catch', 'except', 'handle', 'error'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-13', type: 'multiple-choice',
+          prompt: 'What does git commit do?',
+          options: ['Uploads code to remote', 'Saves staged changes to local repository', 'Deletes a branch', 'Merges two branches'],
+          correctIndex: 1,
+        },
+        {
+          id: 'co-14', type: 'multiple-choice',
+          prompt: 'What is the space complexity of a hash map with n elements?',
+          options: ['O(1)', 'O(log n)', 'O(n)', 'O(n²)'],
+          correctIndex: 2,
+        },
+        {
+          id: 'co-15', type: 'multiple-choice',
+          prompt: 'What does the following return? [1, 2, 3].filter(x => x > 1).reduce((a, b) => a + b, 0)',
+          options: ['3', '5', '6', '1'],
           correctIndex: 1,
         },
       ],
